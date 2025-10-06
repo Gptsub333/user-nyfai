@@ -66,9 +66,9 @@ export function Header() {
   const toggleMobileDropdown = (name) => {
     setMobileDropdown(mobileDropdown === name ? null : name)
   }
-
+  // bg-[radial-gradient(circle_at_left,rgba(164,153,200,0.25),transparent_70%)]
   return (
-    <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-[radial-gradient(circle_at_left,rgba(164,153,200,0.25),transparent_70%)] bg-[#165881] shadow-sm border-b border-border">
+    <header className="fixed top-0 w-full z-50 backdrop-blur-xl bg-[#165881] shadow-sm border-b border-border">
       <div className="container mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 mt-2">
         {/* Top Row - Hidden on mobile */}
         <div className="hidden lg:flex justify-end items-center h-8 text-xs">
