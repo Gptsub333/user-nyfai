@@ -37,7 +37,7 @@ export default function Articles() {
   const [selectedBlogForView, setSelectedBlogForView] = useState(null)
   const [isViewingBlog, setIsViewingBlog] = useState(false)
 
-  const blogsPerPage = 8
+  const blogsPerPage = 9
 
   const typeOptions = ["Case Studies", "Courses", "Podcasts", "Tech", "Use Cases", "Webinars", "Research", "Tutorials"]
   const categoryOptions = [
@@ -62,7 +62,6 @@ export default function Articles() {
     "Education",
   ]
 
-  // API Functions
   const fetchArticles = async (forceRefresh = false) => {
     setLoading(true)
     setFetchingArticles(true)
@@ -178,7 +177,6 @@ export default function Articles() {
     )
   }
 
-  // Pagination logic
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage)
   const startIndex = (contextCurrentPage - 1) * blogsPerPage
   const currentBlogs = filteredBlogs.slice(startIndex, startIndex + blogsPerPage)
@@ -210,13 +208,14 @@ export default function Articles() {
 
   return (
     <div className="min-h-screen bg-[#010817]">
-      <div className="bg-gradient-to-r from-[#165881] to-[#165881] text-white py-20 relative overflow-hidden">
+      <div className="bg-gradient-to-r  text-white pt-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center justify-between">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">Articles & Insights</h1>
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">Articles & Insights</h1>
-              <p className="text-xl text-blue-100 max-w-4xl leading-relaxed">
+
+              <p className="text-xl text-blue-100 max-w-4xl text-center leading-relaxed">
                 Discover the latest trends, insights, and expert perspectives on artificial intelligence, technology,
                 and digital transformation. Stay informed with our comprehensive collection of articles, case studies,
                 and industry analysis.
@@ -233,9 +232,7 @@ export default function Articles() {
           </div>
         ) : (
           <div className="flex flex-col lg:flex-row gap-8">
-            {/* Left Sidebar - Search and Filters */}
             <div className="lg:w-80 space-y-6">
-              {/* Search */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-xl">
                 <div className="relative">
                   <input
@@ -249,7 +246,6 @@ export default function Articles() {
                 </div>
               </div>
 
-              {/* Clear All Button */}
               {(selectedTypes.length > 0 ||
                 selectedCategories.length > 0 ||
                 selectedIndustries.length > 0 ||
@@ -262,7 +258,6 @@ export default function Articles() {
                   </button>
                 )}
 
-              {/* Type Filter */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-xl">
                 <button
                   onClick={() => setIsTypeExpanded(!isTypeExpanded)}
@@ -279,7 +274,6 @@ export default function Articles() {
                   renderFilterOptions(typeOptions, selectedTypes, handleTypeChange, showMoreTypes, setShowMoreTypes)}
               </div>
 
-              {/* Category Filter */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-xl">
                 <button
                   onClick={() => setIsCategoryExpanded(!isCategoryExpanded)}
@@ -302,7 +296,6 @@ export default function Articles() {
                   )}
               </div>
 
-              {/* Industry Filter */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-xl shadow-xl">
                 <button
                   onClick={() => setIsIndustryExpanded(!isIndustryExpanded)}
@@ -326,9 +319,7 @@ export default function Articles() {
               </div>
             </div>
 
-            {/* Main Content */}
             <div className="flex-1">
-              {/* No Results Message */}
               {currentBlogs.length === 0 && !loading && (
                 <div className="text-center py-20">
                   <div className="text-gray-400 text-lg mb-4">Your article will be here</div>
@@ -336,35 +327,37 @@ export default function Articles() {
                 </div>
               )}
 
-              {/* Blog Grid */}
               {currentBlogs.length > 0 && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                   {currentBlogs.map((blog) => (
                     <div
                       key={blog.id}
-                      className="bg-white/5 backdrop-blur-sm border border-white/100 rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer"
+                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer flex flex-col"
                       onClick={() => handleBlogClick(blog)}
                     >
-                      <div className="relative">
+                      <div className="relative w-full aspect-video overflow-hidden">
                         <img
                           src={blog.image || "/placeholder.svg"}
                           alt={blog.title || "Article image"}
-                          className="w-full h-48 object-cover"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           onError={(e) => {
                             e.target.src = "/placeholder.svg"
                           }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                      </div>
-                      <div className="p-6">
-                        <div className="text-sm text-gray-300 mb-2">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div className="absolute bottom-3 left-3 text-xs text-white/90 bg-black/40 px-2 py-1 rounded backdrop-blur-sm">
                           {blog.date ? new Date(blog.date).toLocaleDateString() : "No date"}
                         </div>
-                        <h3 className="text-lg font-semibold text-white mb-3 line-clamp-2 leading-tight hover:text-[#1a729c] transition-colors">
+                      </div>
+                      <div className="p-5 flex flex-col flex-grow">
+                        <h3 className="text-base font-semibold text-white mb-3 line-clamp-2 leading-snug group-hover:text-[#1a729c] transition-colors min-h-[3rem]">
                           {blog.title || "Untitled"}
                         </h3>
-                        <div className="flex items-center gap-2 mb-3">
-                          <div className="w-8 h-8 bg-gradient-to-r from-[#1a729c] to-[#165881] rounded-full flex items-center justify-center shadow-lg">
+                        <p className="text-gray-400 text-sm line-clamp-2 leading-relaxed mb-4 flex-grow">
+                          {blog.excerpt || "No excerpt available"}
+                        </p>
+                        <div className="flex items-center gap-2 pt-3 border-t border-white/10">
+                          <div className="w-7 h-7 bg-gradient-to-r from-[#1a729c] to-[#165881] rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                             <span className="text-xs font-medium text-white">
                               {(blog.author || "Unknown")
                                 .split(" ")
@@ -372,18 +365,14 @@ export default function Articles() {
                                 .join("")}
                             </span>
                           </div>
-                          <span className="text-sm text-gray-300 font-medium">{blog.author || "Unknown Author"}</span>
+                          <span className="text-xs text-gray-300 font-medium truncate">{blog.author || "Unknown Author"}</span>
                         </div>
-                        <p className="text-gray-400 text-sm line-clamp-3 leading-relaxed">
-                          {blog.excerpt || "No excerpt available"}
-                        </p>
                       </div>
                     </div>
                   ))}
                 </div>
               )}
 
-              {/* Pagination */}
               {totalPages > 1 && (
                 <div className="flex items-center justify-center gap-2">
                   <button

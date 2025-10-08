@@ -143,7 +143,7 @@ export default function BlogDetail({ blogId, onBack, onBlogDeleted }) {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section */}
-      <div className="bg-[#1a729c] text-white py-16 relative overflow-hidden">
+      {/* <div className="bg-[#1a729c] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#165881] to-[#165881]"></div>
         <div className="relative max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between mb-8">
@@ -193,6 +193,59 @@ export default function BlogDetail({ blogId, onBack, onBlogDeleted }) {
                   }}
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      {/* Header Section */}
+      <div className="bg-background text-white py-16 relative overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 md:px-8">
+          <div className="flex items-center justify-between mb-8">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              Back to Articles
+            </button>
+            <div className="flex items-center gap-2 text-gray-300">
+              <Clock className="w-4 h-4" />
+              <span className="text-sm">{blog.readTime || "5 Min Read"}</span>  
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-8 max-w-3xl justify-center items-center mx-auto">
+            <div className="text-left ">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">{blog.title}</h1>
+
+              <div className="flex flex-col gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300">By</span>
+                  <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                    <span className="text-sm font-medium text-white">
+                      {(blog.author || "Unknown")
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
+                    </span>
+                  </div>
+                  <span className="font-medium text-white">{blog.author}</span>
+                </div>
+                <div className="text-gray-300">
+                  {blog.date ? new Date(blog.date).toLocaleDateString() : "No date"}
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <img
+                src={blog.image || "/placeholder.svg"}
+                alt={blog.title}
+                className="w-full max-w-4xl h-[400px] md:h-[500px] object-cover rounded-lg"
+                onError={(e) => {
+                  e.target.src = "/placeholder.svg"
+                }}
+              />
             </div>
           </div>
         </div>
