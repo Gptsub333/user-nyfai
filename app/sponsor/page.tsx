@@ -58,14 +58,14 @@ export default function SponsorPage() {
                 className="text-center hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-6">
-                  <div className="w-24 h-16 bg-gradient-to-br from-[#1a729c]/20 to-purple-100 dark:from-[#1a729c]/20 dark:to-purple-900/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-xs font-medium text-[#1a729c]">
+                  <div className="w-24 h-16 bg-gradient-to-br from-[#165881]/20 to-purple-100 dark:from-[#165881]/20 dark:to-purple-900/20 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-xs font-medium text-[#165881]">
                       {sponsor.name}
                     </span>
                   </div>
                   <h3 className="font-semibold mb-2">{sponsor.name}</h3>
                   <Badge
-                    className="text-[#1a729c] bg-white"
+                    className="text-[#165881] bg-white"
                     variant={
                       sponsor.tier === "Platinum"
                         ? "default"
@@ -137,17 +137,17 @@ export default function SponsorPage() {
             ].map((tier, index) => (
               <Card
                 key={index}
-                className={`relative ${tier.popular ? "border-2 border-[#1a729c] shadow-lg" : ""
+                className={`relative ${tier.popular ? "border-2 border-[#165881] shadow-lg" : ""
                   }`}
               >
                 {tier.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#1a729c]">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#165881]">
                     Most Popular
                   </Badge>
                 )}
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">{tier.tier}</CardTitle>
-                  <div className="text-3xl font-bold text-[#1a729c]">
+                  <div className="text-3xl font-bold text-[#165881]">
                     {tier.price}
                   </div>
                   <CardDescription>{tier.description}</CardDescription>
@@ -163,7 +163,7 @@ export default function SponsorPage() {
                   </ul>
                   <Button
                     className={`w-full ${tier.popular ? "" : "variant-outline"
-                      } bg-[#1a729c] text-white`}
+                      } bg-[#165881] text-white`}
                   >
                     Get Started
                   </Button>
@@ -205,7 +205,7 @@ export default function SponsorPage() {
             ].map((benefit, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">
-                  <benefit.icon className="h-12 w-12 text-[#1a729c] mx-auto mb-4" />
+                  <benefit.icon className="h-12 w-12 text-[#165881] mx-auto mb-4" />
                   <h3 className="font-semibold text-lg mb-2">
                     {benefit.title}
                   </h3>
@@ -243,10 +243,10 @@ export default function SponsorPage() {
             ].map((story, index) => (
               <Card
                 key={index}
-                className="bg-gradient-to-br from-[#1a729c]/10 to-purple-50 dark:from-[#1a729c]/20 dark:to-purple-950/20 border-none"
+                className="bg-gradient-to-br from-[#165881]/10 to-purple-50 dark:from-[#165881]/20 dark:to-purple-950/20 border-none"
               >
                 <CardContent className="p-6">
-                  <div className="text-2xl font-bold text-[#1a729c] mb-2">
+                  <div className="text-2xl font-bold text-[#165881] mb-2">
                     {story.result}
                   </div>
                   <blockquote className="text-sm italic mb-4">
@@ -277,7 +277,7 @@ export default function SponsorPage() {
         </div> */}
 
         {/* CTA Section */}
-        <Card className="bg-gradient-to-r from-[#1a729c] to-purple-600 text-white border-none">
+        <Card className="bg-gradient-to-r from-[#165881] to-purple-600 text-white border-none">
           <CardContent className="p-8 text-center">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Partner With Us?
@@ -296,7 +296,7 @@ export default function SponsorPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#1a729c] bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-[#165881] bg-transparent"
               >
                 Download Partnership Kit
               </Button>

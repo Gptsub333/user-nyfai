@@ -84,7 +84,7 @@ export default function NewsletterModule() {
     <section className="py-20 bg-muted/50 dark:bg-muted/50 mb-0">
       {/* Decorative divider */}
       <div className="w-full flex justify-center mb-10">
-        <div className="w-28 h-1 bg-gradient-to-r from-[#1a729c] via-pink-500 to-purple-500 rounded-full animate-pulse" />
+        <div className="w-28 h-1 bg-gradient-to-r from-[#165881] via-pink-500 to-purple-500 rounded-full animate-pulse" />
       </div>
 
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 mb-0">
@@ -92,16 +92,16 @@ export default function NewsletterModule() {
           {!isSubmitted ? (
             <>
               {/* Left Content */}
-              <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#1a729c]/50 via-white to-[#1a729c]/50 dark:from-[#1a729c]/30 dark:via-muted dark:to-[#1a729c]/30">
+              <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#165881]/50 via-white to-[#165881]/50 dark:from-[#165881]/30 dark:via-muted dark:to-[#165881]/30">
                 <h2 className="text-2xl font-bold mb-4">
-                  AI Insight <span className="text-[#1a729c]">Subscription</span>
+                  AI Insight <span className="text-[#165881]">Subscription</span>
                 </h2>
                 <p className="text-muted-foreground text-base leading-relaxed mb-6">
                   Three times a week, we send curated insights to help you explore and apply AI in ways that feel
                   relevant to your work. Simple, thoughtful, and actionable built to fit your routine and support your
                   growth.
                 </p>
-                <p className="mt-6 text-lg sm:text-xl font-semibold text-[#1a729c]">Subscribe & Stay in Loop</p>
+                <p className="mt-6 text-lg sm:text-xl font-semibold text-[#165881]">Subscribe & Stay in Loop</p>
               </div>
 
               {/* Right Form */}
@@ -117,7 +117,7 @@ export default function NewsletterModule() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                      className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                     />
                   </div>
                   <div className="space-y-2">
@@ -130,12 +130,12 @@ export default function NewsletterModule() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                      className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                     />
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-[#165881] to-[#165881] hover:from-[#1a729c] hover:to-[#1a729c] transition-all shadow-md hover:shadow-lg text-white"
+                    className="w-full bg-gradient-to-r from-[#165881] to-[#165881] hover:from-[#165881] hover:to-[#165881] transition-all shadow-md hover:shadow-lg text-white"
                     disabled={isLoading}
                   >
                     {isLoading ? "Subscribing..." : "Subscribe"}

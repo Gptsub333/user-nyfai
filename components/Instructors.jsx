@@ -40,15 +40,15 @@ export default function Instructors() {
                 <img
                   src={instructor.avatar || "/placeholder.svg"}
                   alt={`${instructor.name} avatar`}
-                  className="w-20 h-20 rounded-full object-cover mx-auto mb-4 border border-[#1a729c]"
+                  className="w-20 h-20 rounded-full object-cover mx-auto mb-4 border border-[#165881]"
                 />
               ) : (
                 <div className="w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-8 w-8 text-[#1a729c]" />
+                  <Users className="h-8 w-8 text-[#165881]" />
                 </div>
               )}
               <h3 className="font-semibold text-lg mb-1">{instructor.name}</h3>
-              <p className="text-[#1a729c] text-sm mb-1">{instructor.title}</p>
+              <p className="text-[#165881] text-sm mb-1">{instructor.title}</p>
               {instructor.experience && (
                 <p className="text-muted-foreground text-xs mb-3">{instructor.experience} experience</p>
               )}
@@ -59,7 +59,7 @@ export default function Instructors() {
                     href={instructor.profileLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#1a729c] hover:underline text-sm"
+                    className="text-[#165881] hover:underline text-sm"
                   >
                     View Profile
                   </a>

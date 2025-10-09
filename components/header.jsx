@@ -93,11 +93,11 @@ export function Header() {
                       </div>
                     </DropdownMenuLabel>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem className="text-gray-700 hover:bg-[#1a729c]/10 focus:bg-[#1a729c]/10">
+                    <DropdownMenuItem className="text-gray-700 hover:bg-[#165881]/10 focus:bg-[#165881]/10">
                       <UserCircle className="w-4 h-4 mr-2" />
                       Profile
                     </DropdownMenuItem>
-                    <DropdownMenuItem className="text-gray-700 hover:bg-[#1a729c]/10 focus:bg-[#1a729c]/10">
+                    <DropdownMenuItem className="text-gray-700 hover:bg-[#165881]/10 focus:bg-[#165881]/10">
                       <Settings className="w-4 h-4 mr-2" />
                       Settings
                     </DropdownMenuItem>
@@ -114,7 +114,7 @@ export function Header() {
                     <DropdownMenuItem asChild>
                       <Link
                         href="/auth/login"
-                        className="text-gray-700 hover:bg-[#1a729c]/10 focus:bg-[#1a729c]/10 cursor-pointer"
+                        className="text-gray-700 hover:bg-[#165881]/10 focus:bg-[#165881]/10 cursor-pointer"
                       >
                         <User className="w-4 h-4 mr-2" />
                         Login
@@ -123,7 +123,7 @@ export function Header() {
                     <DropdownMenuItem asChild>
                       <Link
                         href="/auth/signup"
-                        className="text-[#1a729c] hover:bg-[#1a729c]/10 focus:bg-[#1a729c]/10 font-medium cursor-pointer"
+                        className="text-[#165881] hover:bg-[#165881]/10 focus:bg-[#165881]/10 font-medium cursor-pointer"
                       >
                         <UserCircle className="w-4 h-4 mr-2" />
                         Sign Up
@@ -344,7 +344,7 @@ export function Header() {
                           </Button>
                         </Link>
                         <Link href="/auth/signup" onClick={() => setIsOpen(false)}>
-                          <Button size="sm" className="w-full bg-[#1a729c] hover:bg-[#165881] text-white">
+                          <Button size="sm" className="w-full bg-[#165881] hover:bg-[#165881] text-white">
                             Sign Up
                           </Button>
                         </Link>

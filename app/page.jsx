@@ -103,7 +103,7 @@ export default function HomePage() {
         ref={heroRef}
         className="relative min-h-screen flex flex-col justify-between overflow-hidden bg-muted/50 dark:bg-muted/50"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a729c]/20 via-white to-purple-50 dark:from-[#1a729c]/20 dark:via-background dark:to-purple-950/20 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#165881]/20 via-white to-purple-50 dark:from-[#165881]/20 dark:via-background dark:to-purple-950/20 z-0" />
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center items-center text-center max-w-4xl animate-on-scroll">
           <Image src="/AI_LOGO 2.png" alt="AI logo" width={650} height={1} className="block mx-auto mb-[-40]" />
 
@@ -118,7 +118,7 @@ export default function HomePage() {
                 <>
                   <div className="text-center mb-6">
                     <h3 className="text-lg sm:text-xl font-semibold">
-                      🚀 Join <span className="text-[#1a729c]">The AI Movement</span>
+                      🚀 Join <span className="text-[#165881]">The AI Movement</span>
                     </h3>
                     <p className="text-sm text-muted-foreground mt-1">No spam. Only real insights. ✨</p>
                   </div>
@@ -133,7 +133,7 @@ export default function HomePage() {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                        className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                       />
                       <span className="absolute left-3 top-2.5 text-gray-400">👤</span>
                     </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                        className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                       />
                       <span className="absolute left-3 top-2.5 text-gray-400">📧</span>
                     </div>
@@ -155,7 +155,7 @@ export default function HomePage() {
                     {/* Button */}
                     <Button
                       type="submit"
-                      className="w-full text-sm py-3 rounded-xl bg-gradient-to-r from-[#1a729c] to-[#1a729c] hover:from-[#1a729c] hover:to-[#1a729c] transition-all shadow-md hover:shadow-lg text-white"
+                      className="w-full text-sm py-3 rounded-xl bg-gradient-to-r from-[#165881] to-[#165881] hover:from-[#165881] hover:to-[#165881] transition-all shadow-md hover:shadow-lg text-white"
                       disabled={isLoading}
                     >
                       {isLoading ? "Subscribing..." : "✨ Subscribe"}
@@ -185,7 +185,7 @@ export default function HomePage() {
         <div className="relative z-10 mb-20 flex justify-center">
           <button
             onClick={() => window.scrollBy({ top: window.innerHeight, behavior: "smooth" })}
-            className="flex flex-col items-center hover:text-[#1a729c] transition-colors"
+            className="flex flex-col items-center hover:text-[#165881] transition-colors"
           >
             <svg
               className="h-6 w-6 animate-bounce"
@@ -204,8 +204,8 @@ export default function HomePage() {
       <section className="py-20 bg-muted/50 dark:bg-muted/50">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="pointer-events-none absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-3xl bg-[#1a729c]/5" />
-            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#1a729c]/10 to-[#1a729c]/10 blur-sm" />
+            <div className="pointer-events-none absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-3xl bg-[#165881]/5" />
+            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#165881]/10 to-[#165881]/10 blur-sm" />
 
             <div className="rounded-3xl ring-1 ring-border/60 bg-background/40 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.45)] overflow-hidden">
               <div className="md:flex md:items-center">
@@ -221,9 +221,9 @@ export default function HomePage() {
                 </div>
 
                 {/* Right Content */}
-                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#1a729c]/50 via-white to-[#1a729c]/50 dark:from-[#1a729c]/30 dark:via-muted dark:to-[#1a729c]/30 h-full flex flex-col justify-center">
+                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#165881]/50 via-white to-[#165881]/50 dark:from-[#165881]/30 dark:via-muted dark:to-[#165881]/30 h-full flex flex-col justify-center">
                   <h2 className="text-2xl font-bold mb-4">
-                    Join the <span className="text-[#1a729c]">Community</span>
+                    Join the <span className="text-[#165881]">Community</span>
                   </h2>
                   <p className="text-muted-foreground text-base leading-relaxed mb-4">
                     This is where professionals, entrepreneurs, and curious teams come together to learn and grow.
@@ -234,7 +234,7 @@ export default function HomePage() {
                     breakthrough, you&apos;re in good company.
                   </p>
                   <Link href="/community">
-                    <Button size="lg" className="bg-[#1a729c]">
+                    <Button size="lg" className="bg-[#165881]">
                       Join the Conversation
                     </Button>
                   </Link>
@@ -249,15 +249,15 @@ export default function HomePage() {
       <section className="py-20 bg-background/40">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="pointer-events-none absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-3xl bg-[#1a729c]/5" />
-            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#1a729c]/10 to-[#1a729c]/10 blur-sm" />
+            <div className="pointer-events-none absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-3xl bg-[#165881]/5" />
+            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#165881]/10 to-[#165881]/10 blur-sm" />
 
             <div className="rounded-3xl ring-1 ring-border/60 bg-background/40 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.45)] overflow-hidden">
               <div className="md:flex md:items-center">
                 {/* Left Content */}
-                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#1a729c]/50 via-white to-[#1a729c]/50 dark:from-[#1a729c]/30 dark:via-muted dark:to-[#1a729c]/30">
+                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#165881]/50 via-white to-[#165881]/50 dark:from-[#165881]/30 dark:via-muted dark:to-[#165881]/30">
                   <h2 className="text-2xl font-bold mb-4">
-                    Explore Our <span className="text-[#1a729c]">Solutions</span>
+                    Explore Our <span className="text-[#165881]">Solutions</span>
                   </h2>
                   <p className="text-muted-foreground text-base leading-relaxed mb-6">
                     We offer tailored support for individuals, teams, and organizations looking to move forward with
@@ -265,7 +265,7 @@ export default function HomePage() {
                     is designed with impact in mind.
                   </p>
                   <Link href="/solutions">
-                    <Button size="lg" className="bg-[#1a729c]">
+                    <Button size="lg" className="bg-[#165881]">
                       Explore what we offer
                     </Button>
                   </Link>
@@ -291,8 +291,8 @@ export default function HomePage() {
       <section className="py-20 bg-muted/50 dark:bg-muted/50">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="pointer-events-none absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-3xl bg-[#1a729c]/5" />
-            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#1a729c]/10 to-[#1a729c]/10 blur-sm" />
+            <div className="pointer-events-none absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-3xl bg-[#165881]/5" />
+            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#165881]/10 to-[#165881]/10 blur-sm" />
 
             <div className="rounded-3xl ring-1 ring-border/60 bg-background/40 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.45)] overflow-hidden">
               <div className="md:flex md:items-center">
@@ -308,9 +308,9 @@ export default function HomePage() {
                 </div>
 
                 {/* Right Content */}
-                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#1a729c]/50 via-white to-[#1a729c]/50 dark:from-[#1a729c]/30 dark:via-muted dark:to-[#1a729c]/30 h-full flex flex-col justify-center">
+                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#165881]/50 via-white to-[#165881]/50 dark:from-[#165881]/30 dark:via-muted dark:to-[#165881]/30 h-full flex flex-col justify-center">
                   <h2 className="text-2xl font-bold mb-4">
-                    Explore our <span className="text-[#1a729c]">Articles</span>
+                    Explore our <span className="text-[#165881]">Articles</span>
                   </h2>
                   <p className="text-muted-foreground text-base leading-relaxed mb-4">
                     Dive into thought-provoking insights, practical how-tos, and AI trends that matter. Our articles are
@@ -320,7 +320,7 @@ export default function HomePage() {
                     Whether you&apos;re a curious learner or a seasoned pro, these reads will fuel your growth.
                   </p>
                   <Link href="/media/Article">
-                    <Button size="lg" className="bg-[#1a729c]">
+                    <Button size="lg" className="bg-[#165881]">
                       Read Articles
                     </Button>
                   </Link>
@@ -335,15 +335,15 @@ export default function HomePage() {
       <section className="py-20 bg-background/40">
         <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="pointer-events-none absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-3xl bg-[#1a729c]/5" />
-            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#1a729c]/10 to-[#1a729c]/10 blur-sm" />
+            <div className="pointer-events-none absolute inset-0 -z-10 -translate-x-2 translate-y-2 rounded-3xl bg-[#165881]/5" />
+            <div className="pointer-events-none absolute inset-0 -z-20 rounded-3xl bg-gradient-to-r from-[#165881]/10 to-[#165881]/10 blur-sm" />
 
             <div className="rounded-3xl ring-1 ring-border/60 bg-background/40 backdrop-blur shadow-[0_10px_30px_-10px_rgba(0,0,0,0.45)] overflow-hidden">
               <div className="md:flex md:items-center">
                 {/* Left Content */}
-                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#1a729c]/50 via-white to-[#1a729c]/50 dark:from-[#1a729c]/30 dark:via-muted dark:to-[#1a729c]/30 h-full flex flex-col justify-center">
+                <div className="md:w-1/2 p-8 bg-gradient-to-br from-[#165881]/50 via-white to-[#165881]/50 dark:from-[#165881]/30 dark:via-muted dark:to-[#165881]/30 h-full flex flex-col justify-center">
                   <h2 className="text-2xl font-bold mb-4">
-                    Join our <span className="text-[#1a729c]">Tech Events</span>
+                    Join our <span className="text-[#165881]">Tech Events</span>
                   </h2>
                   <p className="text-muted-foreground text-base leading-relaxed mb-4">
                     We host impactful AI and tech events that bring together founders, engineers, and enthusiasts from
@@ -355,7 +355,7 @@ export default function HomePage() {
                     your growth.
                   </p>
                   <Link href="/events/upcoming">
-                    <Button size="lg" className="bg-[#1a729c]">
+                    <Button size="lg" className="bg-[#165881]">
                       Explore Upcoming Events
                     </Button>
                   </Link>

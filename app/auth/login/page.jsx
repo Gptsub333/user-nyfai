@@ -74,7 +74,7 @@ export default function LoginPage() {
                                         placeholder="Enter your email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                 </div>
@@ -92,7 +92,7 @@ export default function LoginPage() {
                                         placeholder="Enter your password"
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
-                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                     <button
@@ -110,13 +110,13 @@ export default function LoginPage() {
                                     <input
                                         id="remember"
                                         type="checkbox"
-                                        className="rounded bg-white border-gray-300 text-[#1a729c] focus:ring-[#1a729c]"
+                                        className="rounded bg-white border-gray-300 text-[#165881] focus:ring-[#165881]"
                                     />
                                     <Label htmlFor="remember" className="text-sm text-gray-600">
                                         Remember me
                                     </Label>
                                 </div>
-                                <Link href="/auth/forgot-password" className="text-sm text-[#1a729c] hover:text-[#165881] font-medium">
+                                <Link href="/auth/forgot-password" className="text-sm text-[#165881] hover:text-[#165881] font-medium">
                                     Forgot password?
                                 </Link>
                             </div>
@@ -133,7 +133,7 @@ export default function LoginPage() {
                         <div className="mt-6 text-center">
                             <p className="text-gray-600">
                                 Don't have an account?{" "}
-                                <Link href="/auth/signup" className="text-[#1a729c] hover:text-[#165881] font-semibold">
+                                <Link href="/auth/signup" className="text-[#165881] hover:text-[#165881] font-semibold">
                                     Sign up
                                 </Link>
                             </p>

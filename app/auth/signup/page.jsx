@@ -88,7 +88,7 @@ export default function SignupPage() {
                                         placeholder="Enter your full name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                 </div>
@@ -107,7 +107,7 @@ export default function SignupPage() {
                                         placeholder="Enter your email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                 </div>
@@ -126,7 +126,7 @@ export default function SignupPage() {
                                         placeholder="Create a password"
                                         value={formData.password}
                                         onChange={handleChange}
-                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                     <button
@@ -152,7 +152,7 @@ export default function SignupPage() {
                                         placeholder="Confirm your password"
                                         value={formData.confirmPassword}
                                         onChange={handleChange}
-                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#1a729c] focus:ring-[#1a729c]"
+                                        className="pl-10 pr-10 h-12 bg-white border-gray-200 focus:border-[#165881] focus:ring-[#165881]"
                                         required
                                     />
                                     <button
@@ -169,16 +169,16 @@ export default function SignupPage() {
                                 <input
                                     id="terms"
                                     type="checkbox"
-                                    className="rounded border-gray-300 text-[#1a729c] focus:ring-[#1a729c]"
+                                    className="rounded border-gray-300 text-[#165881] focus:ring-[#165881]"
                                     required
                                 />
                                 <Label htmlFor="terms" className="text-sm text-gray-600">
                                     I agree to the{" "}
-                                    <Link href="/terms" className="text-[#1a729c] hover:text-[#165881] font-medium">
+                                    <Link href="/terms" className="text-[#165881] hover:text-[#165881] font-medium">
                                         Terms of Service
                                     </Link>{" "}
                                     and{" "}
-                                    <Link href="/privacy" className="text-[#1a729c] hover:text-[#165881] font-medium">
+                                    <Link href="/privacy" className="text-[#165881] hover:text-[#165881] font-medium">
                                         Privacy Policy
                                     </Link>
                                 </Label>
@@ -196,7 +196,7 @@ export default function SignupPage() {
                         <div className="mt-6 text-center">
                             <p className="text-gray-600">
                                 Already have an account?{" "}
-                                <Link href="/auth/login" className="text-[#1a729c] hover:text-[#165881] font-semibold">
+                                <Link href="/auth/login" className="text-[#165881] hover:text-[#165881] font-semibold">
                                     Sign in
                                 </Link>
                             </p>

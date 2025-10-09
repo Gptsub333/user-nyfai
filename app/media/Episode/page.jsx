@@ -41,7 +41,7 @@ export default function EpisodesPage() {
         </div>
         <div className="flex justify-center items-center py-12">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#1a729c] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#165881] mx-auto mb-4"></div>
             <p className="text-muted-foreground">Loading Episodes...</p>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function EpisodesPage() {
           {episodes.map((episode, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col border-[#1a729c] rounded-3xl max-w-sm mx-auto w-full"
+              className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col border-[#165881] rounded-3xl max-w-sm mx-auto w-full"
             >
               <div className="relative w-full aspect-square overflow-hidden max-w-70 max-h-60">
                 <img
@@ -82,7 +82,7 @@ export default function EpisodesPage() {
                   <span>•</span>
                   <span>2 min read</span>
                 </div>
-                <CardTitle className="text-xl text-[#1a729c] line-clamp-2 mb-3 font-bold leading-tight">
+                <CardTitle className="text-xl text-[#165881] line-clamp-2 mb-3 font-bold leading-tight">
                   {episode.title}
                 </CardTitle>
                 <p className="text-sm text-muted-foreground line-clamp-2 mb-4">{episode.description}</p>
@@ -90,7 +90,7 @@ export default function EpisodesPage() {
               <CardContent className="pt-0 pb-6">
                 {episode.link ? (
                   <a href={episode.link} target="_blank" rel="noopener noreferrer" className="w-full">
-                    <Button className="text-[#1a729c] border-[#1a729c] bg-[#165881] text-white transition-all w-full rounded-xl">
+                    <Button className="text-[#165881] border-[#165881] bg-[#165881] text-white transition-all w-full rounded-xl">
                       Watch {episode.episode}
                     </Button>
                   </a>

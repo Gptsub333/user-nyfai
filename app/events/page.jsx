@@ -44,7 +44,7 @@ export default function EventsPage() {
                 <CardDescription>Workshops, talks, and live sessions.</CardDescription>
                 <div className="mt-4">
                   <Link href="/events/upcoming" className="inline-block">
-                    <Button size="sm" variant="outline" className="bg-[#165881] hover:bg-[#1a729c]">
+                    <Button size="sm" variant="outline" className="bg-[#165881] hover:bg-[#165881]">
                       View & Manage Upcoming Events
                     </Button>
                   </Link>
@@ -79,13 +79,13 @@ export default function EventsPage() {
             <Card>
               <CardContent className="p-8">
                 <div className="text-center">
-                  <Calendar className="h-16 w-16 text-[#1a729c] mx-auto mb-4" />
+                  <Calendar className="h-16 w-16 text-[#165881] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Stay Updated</h3>
                   <p className="text-muted-foreground mb-6">
                     Subscribe to our event calendar to never miss an important AI event.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button className="bg-[#1a729c]">Subscribe to Calendar</Button>
+                    <Button className="bg-[#165881]">Subscribe to Calendar</Button>
                     <Button variant="outline">Get Email Updates</Button>
                   </div>
                 </div>

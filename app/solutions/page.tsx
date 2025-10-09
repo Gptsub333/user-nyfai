@@ -30,7 +30,7 @@ export default function SolutionsPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge variant="secondary" className="mb-4">
-            <Zap className="w-3 h-3 mr-1 text-[#1a729c]" />
+            <Zap className="w-3 h-3 mr-1 text-[#165881]" />
             AI Solutions
           </Badge>
           <h1 className="text-4xl font-bold mb-4">
@@ -115,10 +115,10 @@ export default function SolutionsPage() {
           ].map((solution, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-[#1a729c]"
+              className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-[#165881]"
             >
               <CardHeader>
-                <solution.icon className="h-10 w-10 text-[#1a729c] mb-2" />
+                <solution.icon className="h-10 w-10 text-[#165881] mb-2" />
                 <CardTitle className="text-xl">{solution.title}</CardTitle>
                 <CardDescription>{solution.description}</CardDescription>
               </CardHeader>
@@ -178,7 +178,7 @@ export default function SolutionsPage() {
             ].map((story, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-[#1a729c] mb-2">
+                  <div className="text-3xl font-bold text-[#165881] mb-2">
                     {story.metric}
                   </div>
                   <div className="text-sm text-muted-foreground mb-4">

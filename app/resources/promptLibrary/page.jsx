@@ -56,7 +56,7 @@ export default function PromptLibraryPage() {
         </div>
         <div className="flex justify-center items-center py-12">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#1a729c] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#165881] mx-auto mb-4"></div>
             <p className="text-muted-foreground">Loading Prompts...</p>
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function PromptLibraryPage() {
             >
               <CardHeader className="flex-1">
                 <div className="flex items-center justify-between mb-3">
-                  {React.createElement(prompt.icon, { className: "h-8 w-8 text-[#1a729c]" })}
+                  {React.createElement(prompt.icon, { className: "h-8 w-8 text-[#165881]" })}
                   <Badge variant="outline" className="text-xs">
                     {prompt.difficulty}
                   </Badge>

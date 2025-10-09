@@ -36,10 +36,10 @@ export default function Certifications() {
 
       <div className="grid md:grid-cols-2 gap-8">
         {certifications.map((cert, index) => (
-          <Card key={index} className="border-2 border-[#1a729c]/20 relative">
+          <Card key={index} className="border-2 border-[#165881]/20 relative">
             <CardHeader>
               <div className="flex items-center space-x-2 mb-2">
-                <Award className="h-6 w-6 text-[#1a729c]" />
+                <Award className="h-6 w-6 text-[#165881]" />
                 <Badge variant="outline">{cert.badge}</Badge>
               </div>
               <CardTitle className="">{cert.title}</CardTitle>
@@ -52,12 +52,12 @@ export default function Certifications() {
               </div>
               {cert.learnMoreUrl ? (
                 <a href={cert.learnMoreUrl} target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" className="w-full bg-transparent text-[#1a729c] border-[#1a729c]">
+                  <Button variant="outline" className="w-full bg-transparent text-[#165881] border-[#165881]">
                     Learn More
                   </Button>
                 </a>
               ) : (
-                <Button variant="outline" className="w-full bg-transparent text-[#1a729c] border-[#1a729c]">
+                <Button variant="outline" className="w-full bg-transparent text-[#165881] border-[#165881]">
                   Learn More
                 </Button>
               )}

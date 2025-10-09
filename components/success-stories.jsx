@@ -87,10 +87,10 @@ export default function SuccessStory() {
                     {stories.map((story) => (
                         <Card
                             key={story.id}
-                            className="bg-gradient-to-br from-[#1a729c]/10 to-purple-50 dark:from-[#1a729c]/20 dark:to-purple-950/20 border-none"
+                            className="bg-gradient-to-br from-[#165881]/10 to-purple-50 dark:from-[#165881]/20 dark:to-purple-950/20 border-none"
                         >
                             <CardContent className="p-6">
-                                <div className="text-2xl font-bold text-[#1a729c] mb-2">{story.result}</div>
+                                <div className="text-2xl font-bold text-[#165881] mb-2">{story.result}</div>
                                 <blockquote className="text-sm italic mb-4">"{story.quote}"</blockquote>
                                 <div className="flex items-center justify-between">
                                     <div>

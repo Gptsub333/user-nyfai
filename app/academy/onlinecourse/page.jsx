@@ -40,7 +40,7 @@ export default function OnlineCourse() {
         </div>
         <div className="flex justify-center items-center py-12">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#1a729c] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#165881] mx-auto mb-4"></div>
             <p className="text-muted-foreground">Loading Courses...</p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function OnlineCourse() {
                       </Badge>
                       <div className="flex items-center space-x-1">
                         <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        <span className="text-sm font-medium text-[#1a729c]">{course.rating}</span>
+                        <span className="text-sm font-medium text-[#165881]">{course.rating}</span>
                       </div>
                     </div>
                     <CardTitle className="text-lg">{course.title}</CardTitle>
@@ -117,11 +117,11 @@ export default function OnlineCourse() {
                   <CardContent className="mt-auto">
                     <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
                       <div className="flex items-center space-x-1">
-                        <Clock className="h-4 w-4 text-[#1a729c]" />
+                        <Clock className="h-4 w-4 text-[#165881]" />
                         <span>{course.duration}</span>
                       </div>
                       <div className="flex items-center space-x-1">
-                        <Users className="h-4 w-4 text-[#1a729c]" />
+                        <Users className="h-4 w-4 text-[#165881]" />
                         <span>{course.students.toLocaleString()} students</span>
                       </div>
                     </div>
@@ -141,7 +141,7 @@ export default function OnlineCourse() {
                         <Button className="w-full bg-[#165881] transition-all">View Course</Button>
                       </a>
                     ) : (
-                      <Button className="w-full text-[#165881] border-[#165881] hover:bg-[#1a729c] hover:text-white transition-all">
+                      <Button className="w-full text-[#165881] border-[#165881] hover:bg-[#165881] hover:text-white transition-all">
                         {course.progress > 0 ? "Continue Learning" : "View Course"}
                       </Button>
                     )}

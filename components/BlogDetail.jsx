@@ -143,7 +143,7 @@ export default function BlogDetail({ blogId, onBack, onBlogDeleted }) {
   return (
     <div className="min-h-screen bg-background">
       {/* Header Section */}
-      {/* <div className="bg-[#1a729c] text-white py-16 relative overflow-hidden">
+      {/* <div className="bg-[#165881] text-white py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#165881] to-[#165881]"></div>
         <div className="relative max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between mb-8">
@@ -210,7 +210,7 @@ export default function BlogDetail({ blogId, onBack, onBlogDeleted }) {
             </button>
             <div className="flex items-center gap-2 text-gray-300">
               <Clock className="w-4 h-4" />
-              <span className="text-sm">{blog.readTime || "5 Min Read"}</span>  
+              <span className="text-sm">{blog.readTime || "5 Min Read"}</span>
             </div>
           </div>
 

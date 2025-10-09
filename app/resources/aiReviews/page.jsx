@@ -127,7 +127,7 @@ export default function AIReviewsPage() {
     return (
       <div className="min-h-screen py-12 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#1a729c] mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#165881] mx-auto mb-4"></div>
           <p className="text-muted-foreground">Loading reviews...</p>
         </div>
       </div>
@@ -171,7 +171,7 @@ export default function AIReviewsPage() {
                   setIsFilterOpen(true)
                 }}
                 onFocus={() => setIsFilterOpen(true)}
-                className="w-full h-12 text-base border-2 border-[#1a729c] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-colors pr-10"
+                className="w-full h-12 text-base border-2 border-[#165881] focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 transition-colors pr-10"
               />
               <button
                 onClick={() => setIsFilterOpen(!isFilterOpen)}

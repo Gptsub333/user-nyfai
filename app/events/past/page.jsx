@@ -34,7 +34,7 @@ export default function Past() {
         </div>
         <div className="flex justify-center items-center py-12">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#1a729c] mx-auto mb-4"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#165881] mx-auto mb-4"></div>
             <p className="text-muted-foreground">Loading Events...</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Past() {
 
                 <div className="flex-1 p-6 md:p-8">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-[#1a729c] transition">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-[#165881] transition">
                       {event.heading}
                     </h3>
                   </div>

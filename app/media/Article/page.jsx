@@ -159,7 +159,7 @@ export default function Articles() {
               type="checkbox"
               checked={selectedOptions.includes(option)}
               onChange={() => handleChange(option)}
-              className="w-4 h-4 text-[#1a729c] bg-white/10 border-white/20 rounded focus:ring-[#1a729c]/50 focus:ring-2"
+              className="w-4 h-4 text-[#165881] bg-white/10 border-white/20 rounded focus:ring-[#165881]/50 focus:ring-2"
             />
             <span className="text-gray-300 group-hover:text-white transition-colors">{option}</span>
           </label>
@@ -167,7 +167,7 @@ export default function Articles() {
         {hasMoreOptions && (
           <button
             onClick={() => setShowMore(!showMore)}
-            className="flex items-center gap-2 text-[#1a729c] hover:text-white text-sm font-medium transition-colors"
+            className="flex items-center gap-2 text-[#165881] hover:text-white text-sm font-medium transition-colors"
           >
             {showMore ? "Show Less" : "Show More"}
             {showMore ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
@@ -212,7 +212,7 @@ export default function Articles() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
           <div className="flex flex-col items-center justify-between">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">Articles & Insights</h1>
+            <h1 className="text-5xl md:text-4xl font-bold mb-6 text-balance">Articles & Insights</h1>
             <div>
 
               <p className="text-xl text-blue-100 max-w-4xl text-center leading-relaxed">
@@ -240,7 +240,7 @@ export default function Articles() {
                     placeholder="Search articles..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-4 pr-10 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-[#1a729c]/50 focus:border-[#1a729c] outline-none text-white placeholder-gray-300"
+                    className="w-full pl-4 pr-10 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-[#165881]/50 focus:border-[#165881] outline-none text-white placeholder-gray-300"
                   />
                   <Search className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-300 w-5 h-5" />
                 </div>
@@ -252,7 +252,7 @@ export default function Articles() {
                 searchTerm) && (
                   <button
                     onClick={clearAllFilters}
-                    className="bg-gradient-to-r from-[#1a729c] to-[#165881] text-white px-6 py-3 rounded-xl hover:from-[#165881] hover:to-[#1a729c] transition-all duration-300 flex items-center gap-2 font-medium shadow-lg w-full justify-center"
+                    className="bg-gradient-to-r from-[#165881] to-[#165881] text-white px-6 py-3 rounded-xl hover:from-[#165881] hover:to-[#165881] transition-all duration-300 flex items-center gap-2 font-medium shadow-lg w-full justify-center"
                   >
                     CLEAR ALL ✕
                   </button>
@@ -265,9 +265,9 @@ export default function Articles() {
                 >
                   <h3 className="font-semibold text-white">Type</h3>
                   {isTypeExpanded ? (
-                    <Minus className="w-5 h-5 text-[#1a729c]" />
+                    <Minus className="w-5 h-5 text-[#165881]" />
                   ) : (
-                    <Plus className="w-5 h-5 text-[#1a729c]" />
+                    <Plus className="w-5 h-5 text-[#165881]" />
                   )}
                 </button>
                 {isTypeExpanded &&
@@ -281,9 +281,9 @@ export default function Articles() {
                 >
                   <h3 className="font-semibold text-white">Category</h3>
                   {isCategoryExpanded ? (
-                    <Minus className="w-5 h-5 text-[#1a729c]" />
+                    <Minus className="w-5 h-5 text-[#165881]" />
                   ) : (
-                    <Plus className="w-5 h-5 text-[#1a729c]" />
+                    <Plus className="w-5 h-5 text-[#165881]" />
                   )}
                 </button>
                 {isCategoryExpanded &&
@@ -303,9 +303,9 @@ export default function Articles() {
                 >
                   <h3 className="font-semibold text-white">Industry</h3>
                   {isIndustryExpanded ? (
-                    <Minus className="w-5 h-5 text-[#1a729c]" />
+                    <Minus className="w-5 h-5 text-[#165881]" />
                   ) : (
-                    <Plus className="w-5 h-5 text-[#1a729c]" />
+                    <Plus className="w-5 h-5 text-[#165881]" />
                   )}
                 </button>
                 {isIndustryExpanded &&
@@ -350,14 +350,14 @@ export default function Articles() {
                         </div>
                       </div>
                       <div className="p-5 flex flex-col flex-grow">
-                        <h3 className="text-base font-semibold text-white mb-3 line-clamp-2 leading-snug group-hover:text-[#1a729c] transition-colors min-h-[3rem]">
+                        <h3 className="text-base font-semibold text-white mb-3 line-clamp-2 leading-snug group-hover:text-[#165881] transition-colors min-h-[3rem]">
                           {blog.title || "Untitled"}
                         </h3>
                         <p className="text-gray-400 text-sm line-clamp-2 leading-relaxed mb-4 flex-grow">
                           {blog.excerpt || "No excerpt available"}
                         </p>
                         <div className="flex items-center gap-2 pt-3 border-t border-white/10">
-                          <div className="w-7 h-7 bg-gradient-to-r from-[#1a729c] to-[#165881] rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
+                          <div className="w-7 h-7 bg-gradient-to-r from-[#165881] to-[#165881] rounded-full flex items-center justify-center shadow-lg flex-shrink-0">
                             <span className="text-xs font-medium text-white">
                               {(blog.author || "Unknown")
                                 .split(" ")
@@ -391,7 +391,7 @@ export default function Articles() {
                         key={page}
                         onClick={() => handlePageChange(page)}
                         className={`w-12 h-12 rounded-lg font-medium transition-all duration-200 ${contextCurrentPage === page
-                          ? "bg-gradient-to-r from-[#1a729c] to-[#165881] text-white shadow-lg"
+                          ? "bg-gradient-to-r from-[#165881] to-[#165881] text-white shadow-lg"
                           : "text-gray-300 hover:text-white hover:bg-white/10"
                           }`}
                       >

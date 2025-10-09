@@ -109,7 +109,7 @@ export default function MediaPage() {
                 </CardDescription>
                 <div className="mt-4">
                   <Link href="/media/Episode" className="inline-block">
-                    <Button size="sm" className="bg-[#1a729c] text-white">
+                    <Button size="sm" className="bg-[#165881] text-white">
                       View all episodes <ArrowRight className="w-3.5 h-3.5 ml-1" />
                     </Button>
                   </Link>
@@ -124,12 +124,12 @@ export default function MediaPage() {
                       className="group rounded-2xl ring-1 ring-border/60 bg-card/60 hover:bg-card transition-colors p-4"
                     >
                       <div className="flex items-center justify-between mb-2">
-                        <Badge variant="outline" className="text-[#1a729c] border-[#1a729c]">
+                        <Badge variant="outline" className="text-[#165881] border-[#165881]">
                           {episode.episode}
                         </Badge>
-                        <Play className="w-4 h-4 text-[#1a729c]" />
+                        <Play className="w-4 h-4 text-[#165881]" />
                       </div>
-                      <h3 className="font-semibold leading-snug text-[#1a729c] mb-2">
+                      <h3 className="font-semibold leading-snug text-[#165881] mb-2">
                         {episode.title}
                       </h3>
                       <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
@@ -143,7 +143,7 @@ export default function MediaPage() {
                       >
                         <Button
                           size="sm"
-                          className="inline-flex items-center gap-1 bg-[#1a729c] hover:bg-[#165881]/90 text-white"
+                          className="inline-flex items-center gap-1 bg-[#165881] hover:bg-[#165881]/90 text-white"
                         >
                           Watch {episode.episode} <ExternalLink className="w-3.5 h-3.5" />
                         </Button>
@@ -168,7 +168,7 @@ export default function MediaPage() {
                 </CardDescription>
                 <div className="mt-4">
                   <Link href="/media/Article" className="inline-block">
-                    <Button size="sm" className="bg-[#1a729c] text-white">
+                    <Button size="sm" className="bg-[#165881] text-white">
                       Browse all articles <ArrowRight className="w-3.5 h-3.5 ml-1" />
                     </Button>
                   </Link>
@@ -179,7 +179,7 @@ export default function MediaPage() {
                 <article className="relative overflow-hidden rounded-2xl ring-1 ring-border/60 p-6 bg-card/60">
                   <div className="text-center">
                     <div className="flex justify-center mb-4">
-                      <BookOpen className="h-12 w-12 text-[#1a729c]" />
+                      <BookOpen className="h-12 w-12 text-[#165881]" />
                     </div>
                     <h3 className="text-xl font-semibold mb-3">Medium Publication Feed</h3>
                     <p className="text-sm text-muted-foreground mb-4 max-w-md mx-auto">
@@ -195,7 +195,7 @@ export default function MediaPage() {
                       </span>
                     </div>
                     <Link href="https://oliveryarbrough.medium.com/">
-                      <Button className="inline-flex items-center gap-2 bg-[#1a729c] hover:bg-[#1a729c]/90 text-white">
+                      <Button className="inline-flex items-center gap-2 bg-[#165881] hover:bg-[#165881]/90 text-white">
                         <BookOpen className="w-4 h-4" />
                         View Publication Feed
                         <ArrowRight className="w-4 h-4" />

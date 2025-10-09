@@ -121,7 +121,7 @@ export function SubscribePopup() {
                             <>
                                 <div className="text-center mb-6">
                                     <h3 className="text-xl sm:text-2xl font-bold mb-2">
-                                        🚀 Join <span className="text-[#1a729c]">The AI Movement</span>
+                                        🚀 Join <span className="text-[#165881]">The AI Movement</span>
                                     </h3>
                                     <p className="text-sm text-muted-foreground">
                                         Get exclusive AI insights delivered to your inbox. No spam. Only real value. ✨
@@ -138,7 +138,7 @@ export function SubscribePopup() {
                                             value={formData.name}
                                             onChange={handleInputChange}
                                             required
-                                            className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                                            className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                                         />
                                         <span className="absolute left-3 top-2.5 text-gray-400">👤</span>
                                     </div>
@@ -152,7 +152,7 @@ export function SubscribePopup() {
                                             value={formData.email}
                                             onChange={handleInputChange}
                                             required
-                                            className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#1a729c] focus:ring-2 focus:ring-[#1a729c]/50 transition"
+                                            className="pl-10 text-sm rounded-xl border-gray-300 focus:border-[#165881] focus:ring-2 focus:ring-[#165881]/50 transition"
                                         />
                                         <span className="absolute left-3 top-2.5 text-gray-400">📧</span>
                                     </div>
@@ -160,7 +160,7 @@ export function SubscribePopup() {
                                     {/* Button */}
                                     <Button
                                         type="submit"
-                                        className="w-full text-sm py-3 rounded-xl bg-gradient-to-r from-[#1a729c] to-[#1a729c] hover:from-[#1a729c]/90 hover:to-[#1a729c]/90 transition-all shadow-md hover:shadow-lg text-white"
+                                        className="w-full text-sm py-3 rounded-xl bg-gradient-to-r from-[#165881] to-[#165881] hover:from-[#165881]/90 hover:to-[#165881]/90 transition-all shadow-md hover:shadow-lg text-white"
                                         disabled={isLoading}
                                     >
                                         {isLoading ? "Subscribing..." : "✨ Subscribe Now"}
